@@ -58,7 +58,6 @@ module.exports = {
     'no-unreachable': 'warn',
     'no-unsafe-finally': 'warn',
     'no-unsafe-optional-chaining': 'warn',
-    'no-unused-vars': 'warn',
     'no-useless-catch': 'warn',
     'no-useless-escape': 'warn',
     'prefer-const': 'warn',
@@ -71,5 +70,18 @@ module.exports = {
     'valid-typeof': 'warn',
     semi: ['error', 'always'],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
+    'import/extensions': 0,
+    '@typescript-eslint/no-namespace': 'off',
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
+    'max-len': 'off',
   },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
+  },
+  ignorePatterns: ['**/*.css', '**/*.scss'],
 };
